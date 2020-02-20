@@ -1,0 +1,54 @@
+{
+  "name": "explain.webboot.org",
+  "version": "0.23.5",
+  "private": true,
+  "author": "Wizards & Witches @ Work",
+  "description": "@webboot explainer page for endusers.",
+  "license": "AGPL-3.0",
+  "homepage": "https://explain.webboot.org",
+  "engines": {
+    "node": ">=13.5.0"
+  },
+  "engineStrict": true,
+  "scripts": {
+    "start": "t -p",
+    "build": "NODE_ENV=production magic build",
+    "prod": "NODE_ENV=production magic build serve --watch src",
+    "clean": "magic clean",
+    "serve": "magic serve --watch src",
+    "dev": "magic dev --watch src",
+    "format": "f -w --exclude docs",
+    "test": "t --exclude docs example config.js",
+    "calls": "calls",
+    "connect": "magic connect",
+    "publish": "magic publish"
+  },
+  "dependencies": {
+    "@magic-modules/gdpr": "0.0.14",
+    "@magic-modules/light-switch": "0.0.5",
+    "@magic-modules/pre": "0.0.2",
+    "@magic/core": "0.0.32"
+  },
+  "devDependencies": {
+    "@magic/format": "0.0.7",
+    "@magic/test": "0.1.35"
+  },
+  "keywords": [
+    "webboot",
+    "tofu",
+    "tosu",
+    "trust",
+    "first",
+    "use"
+  ],
+  "contributors": [
+    {
+      "name": "jascha ehrenreich",
+      "github": "jaeh"
+    },
+    {
+      "name": "michael parenti",
+      "github": "exiledsurfer"
+    }
+  ]
+}
