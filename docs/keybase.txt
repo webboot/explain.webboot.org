@@ -1,0 +1,53 @@
+==================================================================
+https://keybase.io/jascha
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://docs.webboot.org
+  * I am jascha (https://keybase.io/jascha) on keybase.
+  * I have a public key ASAjrAROviVHjpz0bDPakmnzrQT46flJFT7Ko58x7VHyIQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101be22f43a5cc046964c3321434dd590273fb328300115a169d462a24c4bd83cbb0a",
+      "host": "keybase.io",
+      "kid": "012023ac044ebe25478e9cf46c33da9269f3ad04f8e9f949153ecaa39f31ed51f2210a",
+      "uid": "981316797245613b8ef15b242cc40100",
+      "username": "jascha"
+    },
+    "merkle_root": {
+      "ctime": 1581560017,
+      "hash": "4aeba117730bb5c5e79cfc1726703de0b129b66e507ff152d9866d7fa8251e0edd99660a4ffc29c38429d0e49cd947227be4c7c243c989ec3c8bc150941d2cb9",
+      "hash_meta": "88d4dc87737065a54d3ae14d896e8006bdab7c1ddac004d28a49a52cb47ee81d",
+      "seqno": 14587405
+    },
+    "service": {
+      "entropy": "SMTO8/VkzaWUyVis2Jps8vF5",
+      "hostname": "docs.webboot.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.2.0"
+  },
+  "ctime": 1581560035,
+  "expire_in": 504576000,
+  "prev": "b0c6388ec7697d3eab1def12f9d8c74d02052053df6266f70081511740d98c70",
+  "seqno": 161,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgI6wETr4lR46c9Gwz2pJp860E+On5SRU+yqOfMe1R8iEKp3BheWxvYWTES5cCzKHEILDGOI7HaX0+qx3vEvnYx00CBSBT32Jm9wCBURdA2YxwxCCSInWvGLa9AgDpqSbUG8LdtZTWwsJtDS75FXyC8OvyjQIBwqNzaWfEQPPD1scsFPZiK60wMrS4lkIQybgDcafhh3u7isvKqivunBV6uOvevoUMp1nZhvLdSTxUYB879+dHHsGx2ioEBQqoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCDSG/DQg0AWAlkHXM1+Ub+vqCohlSAdf395Xvfduq1gBaN0YWfNAgKndmVyc2lvbgE=
+
+View my publicly-auditable identity here: https://keybase.io/jascha
+
+==================================================================

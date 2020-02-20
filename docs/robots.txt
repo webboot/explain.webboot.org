@@ -1,0 +1,3 @@
+user-agent: *
+allow: /
+sitemap: https://explain.webboot.org/sitemap.xml
