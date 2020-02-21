@@ -70,4 +70,34 @@ export const state = config => ({
     { to: '/#conclusion', text: 'Conclusion' },
     { to: '/#references', text: 'References' },
   ],
+
+  footer: {
+    one: {
+      title: '@webboot',
+      before: ['trust on every step.', 'created by the @webboot dao.'],
+      menu: [
+        { to: 'https://webboot.org/privacy/', text: 'privacy notice' },
+        { to: 'https://webboot.org/canary/', text: 'warrant canary' },
+      ],
+    },
+    two: {
+      title: 'projects',
+      menu: [
+        { to: 'https://webboot.org', text: 'webboot' },
+        { to: 'https://docs.webboots.org', text: 'webboot docs' },
+        { to: 'https://magic.github.io', text: 'magic' },
+        { to: 'https://grundstein.github.io', text: 'grundstein' },
+      ],
+    },
+    three: {
+      title: 'social links',
+      menu: [
+        { to: 'https://www.npmjs.com/org/webboot', text: 'npm' },
+        { to: 'https://twitter.com/webbootorg', text: 'twitter' },
+        { to: 'https://keybase.io/webboot', text: 'keybase' },
+        { to: 'https://github.com/webboot', text: 'github' },
+        { to: 'https://gitlab.com/webboot', text: 'gitlab' },
+      ],
+    },
+  },
 })
