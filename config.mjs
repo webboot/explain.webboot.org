@@ -1,7 +1,7 @@
 export default {
   ROOT: 'src',
   PUBLIC: 'docs',
-  THEME: 'reader',
+  THEME: ['project', '@webboot/magic-theme', 'reader'],
 
   WEB_ROOT: '/',
   URL: 'explain.webboot.org',
