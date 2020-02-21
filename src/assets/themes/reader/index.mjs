@@ -1,9 +1,4 @@
 export const vars = {
-  background: {
-    dark: '#212121',
-    light: '#c0c0c0',
-  },
-
   pageBackground: {
     dark: '#bbbbbb',
     light: '#f0f0f0',
@@ -17,36 +12,6 @@ export const vars = {
       dark: '#c4c4c4',
       light: '#212121',
     },
-  },
-
-  neutral: '#5a5a5a',
-
-  primary: {
-    dark: '#c82222',
-    light: '#ff7070',
-    neutral: '#ea4444',
-  },
-
-  secondary: {
-    dark: '#22c822',
-    light: '#70ff70',
-    neutral: '#44ea44',
-  },
-
-  text: {
-    dark: '#c4c4c4',
-    light: '#212121',
-  },
-  white: '#ffffff',
-
-  maxWidth: '1000px',
-
-  fadeDuration: '500ms',
-
-  widths: {
-    tablet: '500px',
-    laptop: '1024px',
-    desktop: '1600px',
   },
 }
 
@@ -90,6 +55,7 @@ export default (v = {}) => {
         backgroundColor: v.pageBackground.dark,
         color: v.text.light,
         margin: '0 auto 2em',
+        boxShadow: `6px 6px 3px 1px ${v.neutral}`,
 
         '.light &&': {
           backgroundColor: v.pageBackground.light,
