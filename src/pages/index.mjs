@@ -5,27 +5,28 @@ export const View = state => [
     h2('Abstract:'),
 
     p([
+      'webboot provides a solution to provably verify the integrity',
+      ' of any piece of addressible content,',
+      ' increasing  security guarantees for developers and end-users.',
+    ]),
+
+    p([
+      'webboot connects smart contract enabled distributed hash tables',
+      ' with browsers to provide client-side',
+      ' version management, caching, and subresource integrity guarantees.',
+    ]),
+
+    p([
       span({ title: 'NOT Craig Wright.' }, "Satoshi Nakamoto's"),
       ' solution to the ',
       Link({ to: 'https://en.wikipedia.org/wiki/Byzantine_fault' }, 'byzantine fault'),
-      ' problem enabled the secure and trustless transaction of digital currency tokens.',
+      ' problem enabled trustless transactions of digital currencies,',
+      ' and this spawned a decentralized ecosystem that is just getting started.',
     ]),
 
     p([
-      'The Bitcoin Protocol simply provided the glue stitching together',
-      ' many existing technologies into a new ecosystem of usecases.',
-    ]),
-
-    p([
-      '@webboot integrates smart contract enabled distributed hash tables with browsers',
-      ' to facilitate client-side version management, caching, and subresource integrity guarantees',
-      ' for any type of publicly addressible data.',
-    ]),
-
-    p([
-      '@webboot provides a solution to provably verify the integrity of any',
-      ' piece of addressible content,',
-      ' increasing privacy and security guarantees for developers and end-users.',
+      'We are bringing "byzantine betrayal resistance" to addressible content,',
+      ' enabling both the old and the new web to reach previously impossible levels of integrity.',
     ]),
   ]),
 
