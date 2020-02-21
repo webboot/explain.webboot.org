@@ -47,11 +47,12 @@ export default (v = {}) => {
 
     '.Page': {
       '> div': {
+        fontSize: '1.55vw',
         padding: '5%',
         width: '100%',
-        maxWidth: v.maxWidth,
-        width: '210mm',
-        height: '297mm',
+        maxWidth: 'inherit',
+        width: '80vw',
+        height: '113vw',
         backgroundColor: v.pageBackground.dark,
         color: v.text.light,
         margin: '0 auto 2em',
@@ -114,20 +115,40 @@ export default (v = {}) => {
     },
 
     '.Header': {
+      position: 'relative',
+      zIndex: 1,
+
       '.Toc': {
-        padding: '0 1em',
+        padding: '0',
         position: 'fixed',
-        left: 0,
+        left: '-180px',
         top: 0,
-        width: '280px',
-        overflowY: 'auto',
-        overflowX: 'hidden',
+        width: '200px',
         height: '100vh',
-        backgroundColor: v.background.dark,
+        backgroundColor: v.neutral,
+        transition: `left ${v.fadeDuration}`,
+
+        '.Menu': {
+          direction: 'rtl',
+          height: '80vh',
+          overflowY: 'auto',
+          padding: '0 0 0 .5em',
+          scrollbarColor: `${v.background.dark} ${v.neutral}`,
+          scrollbarWidth: 'thin',
+
+          ul: {
+            direction: 'ltr',
+          },
+        },
+
+        '&:hover, &:focus': {
+          left: 0,
+        },
       },
 
       h3: {
         margin: 0,
+        padding: '0 0 0 .3em',
       },
 
       '.Menu': {
@@ -137,7 +158,7 @@ export default (v = {}) => {
 
         li: {
           float: 'none',
-          margin: '0 0 0.5em',
+          margin: '0 0 1em',
         },
 
         ul: {
@@ -171,6 +192,27 @@ export default (v = {}) => {
         left: 'auto',
         bottom: '3em',
         right: '0.5em',
+      },
+    },
+
+    [`@media screen and (min-width: ${v.widths.laptop})`]: {
+      '.Page': {
+        '> div': {
+          width: '55vw',
+          height: '77.7vw',
+          fontSize: '1vw',
+        },
+      },
+
+      '.Header': {
+        '.Toc': {
+          left: 0,
+        },
+        '.Menu': {
+          li: {
+            margin: '0 0 0.5em',
+          },
+        },
       },
     },
   }
