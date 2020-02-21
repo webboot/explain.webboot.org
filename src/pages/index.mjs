@@ -37,9 +37,8 @@ export const View = state => [
     p([
       'A verifiable source of integrity protocol for the web,',
       ' utilizing a distributed network of validator nodes',
-      ' to provide both developers and users with a toolset',
-      ' to verify the integrity of any piece of publicly addressable content',
-      ' rendered or executed in homepages, webapps, and dapps.',
+      ' to provide both developers and users with a toolset that verifies the integrity',
+      ' of any piece of publicly addressable content.',
     ]),
 
     h3('webboot provides solutions for:'),
@@ -55,19 +54,15 @@ export const View = state => [
 
     h4('Phishing'),
     p([
-      "Webboot can compare any loaded url to the urls saved in it's cache",
-      ' making it possible to calculate the ',
-      Link({ to: 'https://en.wikipedia.org/wiki/Levenshtein_distance' }, 'Levenshtein distance'),
-      ' and other similarity indicators of requested urls.',
+      'By knowing which homepages you visited in the past,',
+      ' webboot will be able to warn you if you visit a url',
+      ' that is very similar to one you visited in the past.',
     ]),
-    p([
-      'This allows us to warn the user about a possible phishing attempt,',
-      ' before even loading the target url and checking the contents it returns.',
-    ]),
+    p('All of that without any information about the content or dns of that url!'),
   ]),
 
-  div({ id: 'problem' }, [
-    h2('Problem'),
+  div({ id: 'problems' }, [
+    h2('Problems'),
 
     p([
       'Homepages, webapps, and dapps',
@@ -80,20 +75,20 @@ export const View = state => [
 
     p('How can we trust a homepage before we even load it?'),
 
-    p(
-      'How can we trust a homepage not to send us malicious code, intentionally or unintentionally?',
-    ),
+    p([
+      'How can we trust a homepage not to send us malicious code,',
+      ' intentionally or unintentionally?',
+    ]),
 
     p([
-      'How can we verify',
-      ' that public wallet key somebody sent us is the correct key?',
-      ' This is especially crucial nowadays,',
+      'How can we verify if that public key somebody sent us is the correct key?',
+      ' This is crucial nowadays,',
       ' where a lot of money is exchanged using decentralized public/private key',
       ' cryptography without transaction reversability.',
     ]),
   ]),
 
-  div({ id: 'problem-tofu' }, [
+  div({ id: 'problems-tofu' }, [
     h2('The Tofu Problem'),
 
     h4('Trust on first use'),
@@ -108,15 +103,15 @@ export const View = state => [
 
     p([
       'Since there is publicly attestable proof of those transactions too,',
-      ' future attestation of past proofs is no issue either,',
-      ' which allows adding an additional layer',
+      ' future attestation of past proofs is possible,',
+      ' this allows adding an additional layer',
       'to (de)centralized ',
       Link({ to: 'https://en.wikipedia.org/wiki/Provenance' }, 'proof of provenance'),
       ' applications.',
     ]),
   ]),
 
-  div({ id: 'problem-tosu' }, [
+  div({ id: 'problems-tosu' }, [
     h2('The Tosu Problem'),
 
     h4('Trust on subsequent use'),
@@ -150,5 +145,38 @@ export const View = state => [
     p('TODO: add paragraph explaining user updating'),
   ]),
 
-  div({ id: 'problem-threat' }, [h2('Threat Vectors')]),
+  div({ id: 'problems-threats' }, [
+    h2('Threat Vectors'),
+
+    h3('2.3.a Hackers'),
+    p([
+      'Maybe someone hacked the homepage servers between our first use of the app and now,',
+      ' established a Man in the Middle (MITM) attack between the server and us,',
+      ' or the country/company/coffeshop network we just connected to',
+      ' contains malware or spyware.',
+    ]),
+
+    h3('2.3.b Broken code'),
+    p([
+      'The developers of an app might have shipped a version of the code that does not work.',
+      ' If only the client could go back to the version of 5 minutes ago...',
+      ' This problem could be solved by making updates',
+      ' of homepages apps / dapps controllable by us, the users,',
+      ' and by providing multiple sources of "integrity proofs".',
+    ]),
+
+    h3('2.3.c Malicious developer'),
+    p([
+      'The only developer of Acme Corp. has been fired,',
+      ' finding a replacement will take a week or longer.',
+    ]),
+    p('Before they left, they decided to hide a mining software on the company page.'),
+
+    h3('2.3.d Phishing'),
+    p('Somebody just sent you a link to [mircosoft.com](https://mircosoft.com).'),
+    p('Did you spot the typo?'),
+
+    p('Will you spot it if it is [miсrosoft.com](https://miсrosoft.com)?'),
+    p('The good news: webboot will warn you if you visited microsoft.com in the past.'),
+  ]),
 ]
