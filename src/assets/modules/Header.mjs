@@ -21,8 +21,9 @@ export const View = (props = {}, children = []) => {
       ]),
     ]),
     div({ class: 'Toc' }, [
+      Burger(),
       h3({ title: 'Table of Contents' }, Link({ to: '/' }, 'ToC')),
-      menu && Menu({ state, items: menu, collapse: false }),
+      Menu({ state, items: menu, collapse: false }),
     ]),
   ])
 }
