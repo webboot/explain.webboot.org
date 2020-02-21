@@ -11,11 +11,14 @@ export const View = (props = {}, children = []) => {
     branding = [branding]
   }
 
-  const [first, ...rest] = branding
+  const [first, second, ...rest] = branding
 
   return header({ class: 'Header' }, [
     div({ class: 'BrandContainer' }, [
-      div([Logo({ root }), branding && Link({ to: root, class: 'branding' }, [span(first), rest])]),
+      div([
+        Logo({ root }),
+        branding && Link({ to: root, class: 'branding' }, [first, span(second), rest]),
+      ]),
     ]),
     div({ class: 'Toc' }, [
       h3({ title: 'Table of Contents' }, Link({ to: '/' }, 'ToC')),
