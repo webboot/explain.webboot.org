@@ -2,7 +2,7 @@ export const state = config => ({
   title: '@webboot explainer',
   description: 'solving the tofu problem, one boot at a time.',
 
-  branding: ['@web', 'boot explain'],
+  branding: ['explain.', 'web', 'boot'],
 
   seo: {
     name: '@webboot',
@@ -21,12 +21,12 @@ export const state = config => ({
   menu: [
     { to: '/#introduction', text: 'Introduction' },
     {
-      to: '/#problem',
-      text: 'Problem',
+      to: '/#problems',
+      text: 'Problems',
       items: [
         { to: '-tofu', text: 'Tofu', title: 'Trust on first use' },
         { to: '-tosu', text: 'Tosu', title: 'Trust on subsequent use' },
-        { to: '-threat', text: 'Threat Vectors' },
+        { to: '-threats', text: 'Threat Vectors' },
       ],
     },
     {
