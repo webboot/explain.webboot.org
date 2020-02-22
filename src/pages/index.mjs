@@ -180,4 +180,57 @@ export const View = state => [
     p('Will you spot it if it is [miсrosoft.com](https://miсrosoft.com)?'),
     p('The good news: webboot will warn you if you visited microsoft.com in the past.'),
   ]),
+
+  div({ id: 'status-quo' }, [
+    h3('Status Quo'),
+
+    p('What is currently being done to solve trust issues involving software integrity?'),
+
+    p('This section describes the current Status Quo of data integrity guarantees we can make.'),
+
+    h3('Auditing'),
+
+    p([
+      'Human auditing on for every piece of content is not a viable solution,',
+      ' due to the time it would take.',
+    ]),
+
+    h3('Formal verification'),
+    p([
+      'Theoretically, every script could be analyzed and proven to do what it should do in every situation.',
+      'But testing software is hard.',
+    ]),
+
+    p([
+      'This would represent millions of man hours of work',
+      ' - which noone is willing (or able) to pay for.',
+    ]),
+
+    h3('Package managers'),
+    p([
+      'Some package managers are called app stores.',
+      ' Most use hash integrity checks as part of the install.',
+      ' Some also use public/private key cryptography for author verification.',
+    ]),
+
+    h3('Version control'),
+    p('(git, svn, mercurial)'),
+    p([
+      'most versioning tools use hashes internally,',
+      ' some use cryptographic signatures for patches and releases.',
+    ]),
+
+    h3('Subresource integrity hashes'),
+    p('Browsers implemented an integriy system for assets.'),
+
+    p([
+      Link({ text: 'SRI hashes', to: 'https://en.wikipedia.org/wiki/Subresource_Integrity' }),
+      ' prove that a piece of payload matches the expected hash.',
+      ' A compromised server can just send compromised scripts and hashes,',
+      ' breaking the security model.',
+    ]),
+
+    h3('Browser extensions'),
+    p('The noscript browser extension uses sri hashes to block javascript.'),
+  ]),
 ]
