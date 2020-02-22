@@ -29,22 +29,9 @@ export const state = config => ({
         { to: '-threats', text: 'Threat Vectors' },
       ],
     },
+    { to: '/#status-quo', text: 'Status Quo' },
     {
-      to: '/#status-quo',
-      text: 'Status Quo',
-      items: [
-        {
-          to: '-social',
-          text: 'Social / Manual',
-        },
-        {
-          to: '-tech',
-          text: 'Automated',
-        },
-      ],
-    },
-    {
-      to: '/#solution',
+      to: '/#solutions',
       text: 'Solutions',
       items: [
         { to: '-tofu', text: 'Tofu' },
@@ -52,6 +39,7 @@ export const state = config => ({
         { to: '-phishing', text: 'Phishing' },
       ],
     },
+    { to: '/#audience', text: 'Audience' },
     {
       to: '/#tech-stack',
       text: 'Tech stack',
