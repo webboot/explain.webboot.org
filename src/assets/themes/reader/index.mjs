@@ -184,6 +184,7 @@ export default (v = {}) => {
       '.Container': {
         width: '80vw',
         maxWidth: 'inherit',
+        padding: 0,
       },
     },
 
