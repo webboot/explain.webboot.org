@@ -178,6 +178,15 @@ export default (v = {}) => {
       },
     },
 
+    '.Footer': {
+      zIndex: 0,
+
+      '.Container': {
+        width: '80vw',
+        maxWidth: 'inherit',
+      },
+    },
+
     '.LightSwitch': {
       position: 'fixed',
       bottom: '0.5em',
@@ -212,6 +221,12 @@ export default (v = {}) => {
           li: {
             margin: '0 0 0.5em',
           },
+        },
+      },
+
+      '.Footer': {
+        '.Container': {
+          width: '55vw',
         },
       },
     },
