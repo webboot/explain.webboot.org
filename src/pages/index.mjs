@@ -182,7 +182,7 @@ export const View = state => [
   ]),
 
   div({ id: 'status-quo' }, [
-    h3('Status Quo'),
+    h2('Status Quo'),
 
     p('What is currently being done to solve trust issues involving software integrity?'),
 
@@ -232,5 +232,148 @@ export const View = state => [
 
     h3('Browser extensions'),
     p('The noscript browser extension uses sri hashes to block javascript.'),
+  ]),
+
+  div({ id: 'solutions' }, [
+    h2('Solutions'),
+
+    h3('Trust on First Use'),
+
+    p([
+      'Combining subresource integrity hashes with the @webboot database',
+      ' makes it possible to provide independent integrity verification.',
+    ]),
+
+    p([
+      'By adding @webboot as the confirming third party,',
+      ' SRI hashes can suddenly be something we trust.',
+    ]),
+
+    h3('Trust on Subsequent Use'),
+
+    h4('service worker caching'),
+    p(
+      'service workers allow us to cache the contents of a homepage for later use and make the homepage available offline.',
+    ),
+
+    p([
+      'using that caching mechanism in a smart way,',
+      ' an upgrade and deprecation mechanism can be implemented,',
+      ' prompting the user to update the homepage scripts to the new version when needed.',
+    ]),
+
+    p([
+      'this solves parts of the tosu problem,',
+      ' giving control of homepage versioning to users,',
+      ' where it should always have been.',
+    ]),
+
+    h3('Developer tools'),
+
+    p([
+      'Developers need a way to authorize and verify new hashes',
+      ' of addressable content they control, using either a ',
+      Link({ to: 'https://keybase.io' }, 'domain.com/keybase.txt'),
+      ' identity or a domain.com/keys.txt file.',
+    ]),
+
+    p([
+      'Using those keys, hashes can be cryptographically verified and checked,',
+      ' making it possible to create chains of trust that end',
+      ' with the actual developers of the properties.',
+    ]),
+
+    p([
+      'Additionally, others can audit those changes and add their verification,',
+      ' making the chain links even stronger.',
+    ]),
+
+    h3('Phishing attacks'),
+
+    p([
+      "all addressible data of loaded homepages is cached locally in the user's browser plug in.",
+      ' this allows us to calculate the difference between known urls and the one being loaded,',
+      ' which, in return, allows us to warn the user about a possible phishing attack',
+    ]),
+  ]),
+
+  div({ id: 'audience' }, [
+    h2('Audience'),
+
+    p('Who does webboot seek to solve problems for?'),
+
+    h3('B2B'),
+    h4('developers/hosters of versioned JavaScript/CSS/HTML artifacts'),
+    p('(Microsoft(github)/Amazon/Cloudflare/Google)'),
+
+    h4('cryptocurrency exchanges, custodial wallet services, DeFI'),
+    p('(Coinbase, JaXX, MyCryptoWallet, WalletConnect)'),
+
+    h4('dapp developers'),
+    p('ethereum, aeternity, ...'),
+
+    h3('B2C'),
+
+    p('Customers of the following services can greatly benefit from @webboot'),
+
+    p('online banking'),
+    p('e-commerce'),
+    p('cryptocurrency exchange'),
+    p('cryptocurrency wallet'),
+    p('governance platforms for DAO users'),
+    p('non-secure messaging platforms'),
+  ]),
+
+  div({ id: 'privacy' }, [
+    h2('Privacy Features'),
+
+    p('The data @webboot collects NEVER includes ip addresses, or other identifying data.'),
+
+    h3('No user accounts'),
+    p('No login to @webboot servers is possible or necessary.'),
+
+    h3('Public data'),
+    p([
+      'We only collect what we need,',
+      ' which means that all data @webboot saves is also public by default.',
+    ]),
+
+    h3('Debug logs'),
+    p('Debugging data is logged for a maximum of 7 days.'),
+
+    h3('Data haven'),
+    p([
+      '@webboot does not,',
+      ' under any circumstances,',
+      " share information about it's users with ",
+      b(i('any')),
+      ' third parties.',
+    ]),
+
+    p([
+      'For further information, please visit our ',
+      Link({ to: 'https://webboot.org/privacy' }, 'privacy policy'),
+      '.',
+    ]),
+  ]),
+
+  div({ id: 'conclusion' }, [
+    h2('Conclusion'),
+
+    p([
+      'By adding an independent source of truth for addressible data,',
+      ' @webboot can be used in almost any kind of trust based data exchange.',
+    ]),
+
+    p([
+      'This allows a lot of existing technology to easily be adapted to implement it,',
+      ' often without changing the application itself.',
+    ]),
+
+    p([
+      '@webboot is the backbone for the creation of a suite of unique applications,',
+      ' allowing the secure exchange of data between individuals,',
+      ' based on public-private key cryptography best practices.',
+    ]),
   ]),
 ]
