@@ -27,9 +27,9 @@
     "@magic-modules/gdpr": "0.0.14",
     "@magic-modules/light-switch": "0.0.5",
     "@magic-modules/pre": "0.0.2",
-    "@magic-themes/project": "0.0.2",
-    "@magic/core": "0.0.33",
-    "@webboot/magic-theme": "0.0.3"
+    "@magic-themes/project": "0.0.3",
+    "@magic/core": "0.0.36",
+    "@webboot/magic-theme": "0.0.4"
   },
   "devDependencies": {
     "@magic/format": "0.0.7",
