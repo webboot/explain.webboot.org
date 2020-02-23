@@ -30,33 +30,25 @@ export const state = config => ({
       ],
     },
     { to: '/#status-quo', text: 'Status Quo' },
-    {
-      to: '/#solutions',
-      text: 'Solutions',
-      items: [
-        { to: '-tofu', text: 'Tofu' },
-        { to: '-tosu', text: 'Tosu' },
-        { to: '-phishing', text: 'Phishing' },
-      ],
-    },
+    { to: '/#solutions', text: 'Solutions' },
     { to: '/#audience', text: 'Audience' },
-    {
-      to: '/#tech-stack',
-      text: 'Tech stack',
-      items: [
-        { to: '/tech/magic/', text: 'Magic' },
-        { to: '/tech/grundstein/', text: 'Grundstein' },
-        { to: '/tech/tor/', text: 'Tor' },
-        { to: '/tech/gnupg/', text: 'Gnupg' },
+    // {
+    //   to: '/#tech-stack',
+    //   text: 'Tech stack',
+    //   items: [
+    //     { to: '/tech/magic/', text: 'Magic' },
+    //     { to: '/tech/grundstein/', text: 'Grundstein' },
+    //     { to: '/tech/tor/', text: 'Tor' },
+    //     { to: '/tech/gnupg/', text: 'Gnupg' },
 
-        { to: '/tech/aeternity/', text: 'Aeternity' },
-        { to: '/tech/bitcoin/', text: 'Bitcoin' },
-        { to: '/tech/ethereum', text: 'Ethereum' },
-      ],
-    },
-    { to: '/#user-rights', text: 'User rights' },
+    //     { to: '/tech/aeternity/', text: 'Aeternity' },
+    //     { to: '/tech/bitcoin/', text: 'Bitcoin' },
+    //     { to: '/tech/ethereum', text: 'Ethereum' },
+    //   ],
+    // },
+    { to: '/#privacy', text: 'User Rights' },
     { to: '/#conclusion', text: 'Conclusion' },
-    { to: '/#references', text: 'References' },
+    // { to: '/#references', text: 'References' },
   ],
 
   footer: {
