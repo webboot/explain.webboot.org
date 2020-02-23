@@ -4,6 +4,7 @@ export default {
   THEME: ['project', '@webboot/magic-theme', 'reader'],
 
   WEB_ROOT: '/',
+
   URL: 'explain.webboot.org',
   CNAME: 'explain.webboot.org',
 
