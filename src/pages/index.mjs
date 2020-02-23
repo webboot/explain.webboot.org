@@ -4,18 +4,26 @@ export const View = state => [
 
     h2('Abstract:'),
 
+    h4('Integrity guarantees'),
     p([
       'webboot provides a solution to provably verify the integrity',
       ' of any piece of addressible content,',
-      ' increasing  security guarantees for developers and end-users.',
+      ' increasing security guarantees for developers and end-users.',
     ]),
 
+    h4('Social trust'),
     p([
-      'webboot connects smart contract enabled distributed hash tables',
-      ' with browsers to provide client-side',
-      ' version management, caching, and subresource integrity guarantees.',
+      'webboot allows social trust chains for public data.',
+      ' Any entity publishing a piece of publicly addressible data can proof their authorship.',
     ]),
 
+    h4('User benefits'),
+    p([
+      'webboot connects browsers with smart contract enabled distributed hash tables',
+      ' to provide version management, caching, and subresource integrity guarantees.',
+    ]),
+
+    h4('Byzantine betrayal resistance'),
     p([
       span({ title: 'NOT Craig Wright.' }, "Satoshi Nakamoto's"),
       ' solution to the ',
@@ -127,7 +135,7 @@ export const View = state => [
     ]),
 
     p([
-      'But what happens when on second load,',
+      'But what happens when, on second load,',
       ' we discover that a piece of data we have loaded has changed?',
       ' At the least, we again have to verify the data',
       ' and its origin just as we did on the first load.',
@@ -136,10 +144,10 @@ export const View = state => [
     p([
       'Simply said:',
       ' We ',
-      Link({ to: 'TODO: rfc2119#MUSTNOT' }, 'MUST NOT'),
+      Link({ to: 'https://tools.ietf.org/html/rfc2119#section-2' }, 'MUST NOT'),
       ' trust the server to send us valid code,',
       ' on the contrary, we ',
-      Link({ to: 'TODO: rfc2119#SHOULD' }, 'SHOULD'),
+      Link({ to: 'https://tools.ietf.org/html/rfc2119#section-3' }, 'SHOULD'),
       ' assume to receive malicious payloads on every load.',
     ]),
 
