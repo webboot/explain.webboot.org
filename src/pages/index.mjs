@@ -63,9 +63,9 @@ export const View = state => [
 
     h4('Phishing'),
     p([
-      'By knowing which homepages you visited in the past,',
+      'By knowing which homepages you frequent,',
       ' webboot will be able to warn you if you visit a url',
-      ' that is very similar to one you visited in the past.',
+      ' that has similarities to one you visited the past.',
     ]),
     p('All of that without any information about the content or dns of that url!'),
   ]),
