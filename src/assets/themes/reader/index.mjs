@@ -1,6 +1,6 @@
 export const vars = {
   pageBackground: {
-    dark: '#bbbbbb',
+    dark: '#eeeeee',
     light: '#f0f0f0',
   },
 
