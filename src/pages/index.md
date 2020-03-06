@@ -87,6 +87,9 @@ This is crucial nowadays,
 where a lot of money is exchanged using decentralized public/private key
 cryptography without transaction reversability.
 
+</div>
+
+<div>
 
 ## #problems-tofu The Tofu Problem
 
@@ -105,6 +108,10 @@ this allows adding an additional layer
 to (de)centralized
 [proof of provenance](https://en.wikipedia.org/wiki/Provenance)
 applications.
+
+</div>
+
+<div>
 
 ## #problems-tosu The Tosu Problem
 
