@@ -48,7 +48,6 @@ export const state = config => ({
     // },
     { to: '/#privacy', text: 'User Rights' },
     { to: '/#conclusion', text: 'Conclusion' },
-    // { to: '/#references', text: 'References' },
   ],
 
   footer: {
