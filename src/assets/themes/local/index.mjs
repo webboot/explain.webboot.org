@@ -1,26 +1,7 @@
-export const vars = {
-  link: {
-    dark: '#212121',
-    light: '#212121',
-  },
-}
-
-export default v => {
-  v = { ...vars, ...v }
-
-  return {
-  '.Page': {
-    '> div': {
-      fontSize: '1.7vw',
+export default {
+  '.Header': {
+    '.BrandContainer': {
+      margin: '0 auto 0 -2.4em',
     },
   },
-
-  [`@media screen and (min-width: ${v.widths.laptop})`]: {
-    '.Page': {
-      '> div': {
-        fontSize: '1.3vw',
-      },
-    },
-  },
-}
 }
