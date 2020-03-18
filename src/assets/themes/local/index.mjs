@@ -16,4 +16,10 @@ export default {
       margin: '0 auto 0 -2.4em',
     },
   },
+
+  '.Footer': {
+    '.Container': {
+      width: '90vw',
+    },
+  },
 }
