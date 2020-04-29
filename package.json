@@ -27,12 +27,12 @@
     "@magic-modules/gdpr": "0.0.15",
     "@magic-modules/light-switch": "0.0.5",
     "@magic-themes/reader": "0.0.4",
-    "@magic/core": "0.0.67",
+    "@magic/core": "0.0.70",
     "@webboot/magic-theme": "0.0.4"
   },
   "devDependencies": {
-    "@magic/format": "0.0.8",
-    "@magic/test": "0.1.41"
+    "@magic/format": "0.0.10",
+    "@magic/test": "0.1.44"
   },
   "keywords": [
     "webboot",
