@@ -21,14 +21,17 @@
     "test": "t --exclude docs example config.js",
     "calls": "calls",
     "connect": "magic connect",
-    "publish": "magic publish"
+    "publish": "magic publish",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@magic-modules/gdpr": "0.0.15",
     "@magic-modules/light-switch": "0.0.5",
     "@magic-themes/reader": "0.0.4",
     "@magic/core": "0.0.70",
-    "@webboot/magic-theme": "0.0.4"
+    "@webboot/magic-theme": "0.0.4",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@magic/format": "0.0.10",
@@ -51,5 +54,6 @@
       "name": "michael parenti",
       "github": "exiledsurfer"
     }
-  ]
+  ],
+  "snyk": true
 }
