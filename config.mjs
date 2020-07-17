@@ -8,7 +8,7 @@ export default {
   URL: 'explain.webboot.org',
   CNAME: 'explain.webboot.org',
 
-  HOIST: ['LightSwitch', 'Gdpr'],
+  HOIST: ['LightSwitch', 'NoSpy'],
 
   IGNORED_STATIC: ['.xcf'],
 }
