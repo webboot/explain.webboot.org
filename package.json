@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@magic-modules/light-switch": "0.0.6",
-    "@magic-modules/no-spy": "0.0.1",
+    "@magic-modules/no-spy": "0.0.5",
     "@magic-themes/reader": "0.0.5",
     "@magic/core": "0.0.85",
     "@webboot/magic-theme": "0.0.7"
